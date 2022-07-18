@@ -1,0 +1,113 @@
+*{ 
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:300;
+    background-color: hsl(217, 54%, 11%);
+    color:hsl(215, 51%, 70%);
+}
+.flexbox{
+    width:302px;
+    padding:20px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius:10px;
+    margin:20% auto;
+}
+.imgbox{
+    position:relative;
+    top:0;
+    left:0;
+}
+#prdt-img{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    border-radius: 7px;
+}
+#hover-img{
+    position:absolute;
+    width:100%;
+    padding:102px;
+    border-radius: 7px;
+    top:0;
+    left:0px;
+    background-color: hsla(178, 100%, 50%, 0.425);
+    opacity: 0.0;
+}
+.part{
+    padding:12px 0;
+}
+#heading{
+    font-weight:700;
+    color:white;
+    font-size:1.5em;
+}
+#price-table{
+    display:flex;
+    width:100%;
+}
+.td{
+ flex:50%;
+ display:flex;
+ align-items: center;
+ justify-content: left;
+}
+.img-eth{
+    margin-bottom:-2px;
+}
+#price-table #time{
+    padding-left:29px;
+}
+
+#price{
+    font-weight:700;
+    color:hsl(178, 100%, 50%);
+}
+#price #img-eth{
+    width:9px;
+    height:auto;
+}
+.ing-td{
+    vertical-align: bottom;
+}
+#days{
+    float:right;
+}
+.line{
+    border:1px solid hsl(215, 51%, 70%);
+    margin:16px 0;
+}
+#creator{
+    margin-top:35px;
+    font-weight:300;
+    font-size:0.8em;
+    word-spacing: 4px;
+}
+#crt-dt{
+    width:32px;
+    height:auto;
+    border:1px solid white;
+    border-radius: 50%;
+}
+#name{
+    padding-left:5px;
+    font-weight: 400;
+    color:white;
+}
+@media(min-width:768px){
+    .flexbox{
+        margin:7% auto;
+    }
+    #name:hover,#heading:hover{
+        color:hsl(178, 100%, 50%);
+        cursor:pointer;
+    }
+    #hover-img:hover{
+        opacity:1;
+        cursor:pointer;
+    }
+}
